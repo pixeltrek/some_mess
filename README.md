@@ -76,3 +76,12 @@ pacman -Qt: 列出不被任何软件要求的软件包
 pacman -Sc：清理未安装的包文件，包文件位于 /var/cache/pacman/pkg/ 目录。
 pacman -Scc：清理所有的缓存文件。
 ```
+
+## 修改用户文件夹名称
+```
+vim .config/user-dirs.dirs
+```
+然后：
+右键需要修改名字的文件夹 点编辑
+![image](https://github.com/user-attachments/assets/d6486d32-4986-4b0d-8e38-77ee70763a08)
+
