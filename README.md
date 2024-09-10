@@ -17,14 +17,22 @@ yay --version
 yay -Si package_name  这个命令会显示有关包的详细信息，包括描述、依赖项、维护者等。
 
 Remove packages with:
-
 yay -R package_name
+
 To delete a package with its dependencies:
-
 yay -Rns package_name
-Upgrading (only) the AUR packages:
 
+Upgrading (only) the AUR packages:
 yay -Sua
+
+升级yay
+yay -Sua
+
+卸载yay
+sudo pacman -Rs yay
+
+
+
 ```
 # pacman 使用方法
 ## 安装软件
