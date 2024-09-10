@@ -1,4 +1,4 @@
-###Arch linux
+### Arch linux
 ## setting up Chinese
 vim /etc/locala.gen
 remove # for en_US.UTF-8 & zh_CN.UTF-8
