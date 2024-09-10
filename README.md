@@ -14,6 +14,7 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 yay --version
+yay -Si package_name  这个命令会显示有关包的详细信息，包括描述、依赖项、维护者等。
 ```
 # pacman 使用方法
 ## 安装软件
@@ -52,5 +53,8 @@ pacman -Qs 关键字: 搜索已安装的软件包
 pacman -Qu: 列出所有可升级的软件包
 pacman -Qt: 列出不被任何软件要求的软件包
 ```
-
-
+## 清理缓存
+```
+pacman -Sc：清理未安装的包文件，包文件位于 /var/cache/pacman/pkg/ 目录。
+pacman -Scc：清理所有的缓存文件。
+```
