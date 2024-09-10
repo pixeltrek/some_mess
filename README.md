@@ -85,9 +85,5 @@ vim .config/user-dirs.dirs
 右键需要修改名字的文件夹 点编辑
 ![image](https://github.com/user-attachments/assets/d6486d32-4986-4b0d-8e38-77ee70763a08)
 
-```
-# 你好吗
 
-
-```
 
