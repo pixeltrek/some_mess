@@ -30,7 +30,8 @@ yay -Sua
 
 卸载yay
 sudo pacman -Rs yay
-
+清理缓存
+sudo yay -Scc
 
 
 ```
