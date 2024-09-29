@@ -1,0 +1,1 @@
+  - {name: khjjkjkh, server: 104.33.55.66, port: 80, type: vless,servername:104.33.55.66, uuid: 0b582f1b-8718-6633-9a47-ef6fb16e5599, tls: false,network: ws, ws-opts: {path: /test}, udp: true}
