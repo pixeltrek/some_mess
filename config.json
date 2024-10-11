@@ -9,7 +9,8 @@
                 "type": "field",
                 "outboundTag": "custom",
                 "domain": [
-                    "geosite:openai"
+                    "geosite:twitch",
+                    "geosite:speedtest"
                 ]
             }
         ]
@@ -49,7 +50,7 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/test2"
+                    "path": "/"
                 }
 
             }
