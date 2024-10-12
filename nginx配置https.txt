@@ -1,0 +1,6 @@
+1.安装 Certbot 和 Nginx 插件：
+sudo apt install certbot python3-certbot-nginx
+2.获取证书
+sudo certbot --nginx -d your_domain
+3.自动续订：
+sudo certbot renew --dry-run
