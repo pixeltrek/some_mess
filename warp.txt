@@ -1,0 +1,2 @@
+先获取token https://《机构名carem》cloudflareaccess.com/warp
+warp-cli registration token  获取的token
