@@ -1,2 +1,5 @@
-先获取token https://《机构名carem》cloudflareaccess.com/warp
+在linux上部署warp然后绑定到team 然后通过warp-cli 创建本地socks5 40000端口 再通过xray转发
+在zero trust settings > warp client 开启proxy模式
+先获取token https://《机构名carem》.cloudflareaccess.com/warp
 warp-cli registration token  获取的token
+warp-cli connect
