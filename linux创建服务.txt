@@ -1,0 +1,16 @@
+sudo bash -c 'cat > /etc/systemd/system/xray.service <<EOF
+[Unit]
+Description=Xray Service
+After=network.target
+
+[Service]
+User=root
+ExecStart=/root/xray/xray -c /root/xray/config.json
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+EOF'
+
+
+
