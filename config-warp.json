@@ -1,0 +1,87 @@
+{
+    "log": {
+        "loglevel": "warning"
+    },
+    "routing": {
+        "domainStrategy": "AsIs",
+        "rules": [
+            {
+                "type": "field",
+                "outboundTag":"direct",
+                "domain": [
+                    "geosite:youtube",
+                    "geosite:google",
+                    "geosite:pikpak",
+                    "geosite:openai",
+                    "geosite:apple"
+                ]
+            },
+            {
+                "type": "field",
+                "outboundTag": "warp-v4",       
+                "network": "udp,tcp"
+            }
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 80,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "0b582f1b-8718-4590-9a47-ef6fb16e7116"
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/test"
+                }
+
+            }
+        }
+    ],
+    "outbounds": [
+         {
+            "tag":"warp-v4",
+            "protocol":"freedom",
+            "settings":{
+                "domainStrategy":"UseIPv4"
+            },
+            "proxySettings":{
+                "tag":"warp"
+            }
+        },
+        {
+            "tag":"warp-v6",
+            "protocol":"freedom",
+            "settings":{
+                "domainStrategy":"UseIPv6"
+            },
+            "proxySettings":{
+                "tag":"warp"
+            }
+        },
+        {
+            "protocol": "socks",
+            "settings": {
+                "servers": [
+                    {
+                        "address": "127.0.0.1",
+                        "port": 40000
+                    }
+                ]
+            },
+            "tag": "warp"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct",
+            "settings": {}
+        }
+    ]
+}
