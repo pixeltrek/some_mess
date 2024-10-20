@@ -1,4 +1,5 @@
-#文件放在/etc/libvirt/hooks/qemu
+# 脚本功能是用来在启用虚拟机是隔离cpu关闭虚拟机时不隔离cpu
+# 文件放在/etc/libvirt/hooks/qemu
 #!/bin/sh
 
 command=$2
