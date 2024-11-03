@@ -1,0 +1,19 @@
+
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix":[
+        "vrchat.cloud",
+        "bigscreencloud.com",
+        "fitxr.io",
+        "fitxr.com"
+      ]
+      ,
+      "domain_keyword":[
+        "getsupernatural",
+        "metacdn"
+      ]
+    }
+  ]
+}
